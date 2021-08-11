@@ -336,7 +336,8 @@ func main() {
 	DomainsList := make(chan string)
 
 	////| Requests TimeOut
-	var TimeOut int
+	var TimeOut int69d58e99-df1b-11e9-84a0-06e1158024a8
+
 	flag.IntVar(&TimeOut, "t", 10000, "Set the timeout of the requests (Millisecond)")
 	var con int
 	flag.IntVar(&con, "threads", 40, "Number of threads")
@@ -347,13 +348,13 @@ func main() {
 
 	//var OnlyOK string
 	//flag.StringVar(&OnlyOK, "only-ok", "", "Print out only OK (Bypassed and dir listing) ")
-	OnlyOK := flag.Bool("only-ok", false, "Print out only OK (Bypassed and dir listing) ")
+	OnlyOK := flag.Bool("o", false, "Print 'only-ok' results (bypass + directory listing)")
 
 	// var OnlyBypass string
 	// flag.StringVar(&OnlyBypass, "to-bypass", "", "Use this option with sites list [If you already have forbidden dirs] e.x(-to-bypass Forbiddens.txt)")
 
 	var SingleSite string
-	flag.StringVar(&SingleSite, "single", "", "Only scan single target e.g (-single https://example.com/)")
+	flag.StringVar(&SingleSite, "s", "", "Only scan single target e.g (-s https://example.com/)")
 	flag.Parse()
 	// showErr = strings.ToLower(showErr)
 
